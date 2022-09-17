@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    /* border: 10px solid blue; */
+}
+
+.btn{
+    border-radius: 20%;
+    /* background-color: rgb(161, 128, 161); */
+    /* color: rgb(171, 89, 89);  */
+    padding: 10px;
+    margin: 3px 0px;
+}

@@ -6,17 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div>
+    <div class="container">
         <h3>Calculator</h3>
-        <form onsubmit="sum(); return false">
-            <span>Number 1 </span><input type="number" name="num1" id="num1">
-            <br><br>
-            <span>Number 2 </span><input type="number" name="num2" id="num2">
-            <br><br>
-            <button type="submit">Add</button>
+        <form onsubmit="calculate(); return false">
+            <div class="screen">
+                <input type="text" id="screen">
+            </div>
+            <div class="buttons">
+            <input class="btn" type="button" value="/" onclick="number('/')" >
+            <input class="btn" type="button" value="*" onclick="number('*')" >
+            <input class="btn" type="button" value="-" onclick="number('-')" >
+            <input class="btn" type="button" value="x" onclick="deleteIt()" >
+            <br>
+            <input class="btn" type="button" value="1" onclick="number(1)" >
+            <input class="btn" type="button" value="2" onclick="number(2)" >
+            <input class="btn" type="button" value="3" onclick="number(3)" >
+            <input class="btn" type="button" value="+" onclick="number('+')" >
+            <br>
+            <input class="btn" type="button" value="4" onclick="number(4)" >
+            <input class="btn" type="button" value="5" onclick="number(5)" >
+            <input class="btn" type="button" value="6" onclick="number(6)" >
+            <br>
+            <input class="btn" type="button" value="7" onclick="number(7)" >
+            <input class="btn" type="button" value="8" onclick="number(8)" >
+            <input class="btn" type="button" value="9" onclick="number(9)" >
+            <button class="btn" type="submit">=</button>
+            <br>
+            <input class="btn" type="button" value="0" onclick="number(0)" >
+            <input class="btn" type="button" value="." onclick="number('.')" >
+            </div>
+            
+
         </form>
         <h4 id="result"></h4>
     </div>
